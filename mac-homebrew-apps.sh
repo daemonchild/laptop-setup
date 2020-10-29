@@ -21,10 +21,10 @@ brew tap adoptopenjdk/openjdk
 java=( adoptopenjdk8 adoptopenjdk9 adoptopenjdk10 adoptopenjdk11 )
 
 echo [Define] cask apps
-caskapps=( 1password google-chrome powershell Firefox firefox-developer-edition paw bbedit iterm2 viscosity appzapper microsoft-teams little-snitch slack visual-studio-code superduper wireshark istat-menus zoomus )
+caskapps=( 1password google-chrome powershell slack Firefox firefox-developer-edition paw bbedit iterm2 viscosity appzapper microsoft-teams little-snitch slack visual-studio-code superduper wireshark istat-menus zoomus )
 
 echo [Define] testing apps
-testing=( john-jumbo sslscan nmap )
+testing=( john-jumbo sslscan nmap wireshark )
 
 echo [Installing] utils
 for app in ${utils[@]} ; do HOMEBREW_NO_AUTO_UPDATE=1 brew install --no-quarantine $app ; done
